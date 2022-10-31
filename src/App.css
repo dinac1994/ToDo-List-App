@@ -1,0 +1,130 @@
+.app {
+  background-color: white;
+  padding: 1px 15px 1px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  background-image: linear-gradient(to right, #003153, #3b7a57);
+  padding: 15px;
+  border-radius: 14px;
+}
+
+.heading {
+  font-family: arial;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 36px;
+  padding: 5px;
+  margin: 0px;
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form .input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  border-radius: 10px;
+  margin: 10px;
+  margin-left: 0px;
+  flex: 1 0 165px;
+}
+
+.form .deleteCompleted {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: #ffa07a;
+  color: #FFF;
+  border: 2px solid #ffa07a;
+  border-radius: 10px;
+}
+
+.todo {
+  display: flex;
+  color: #333;
+  background-color: rgba(255,255,255,.5);
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
+  margin-top: 15px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.name {
+  font-size: 20;
+  font-family: arial;
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@keyframes deletetodoAnimation1 {
+  from {background-image: url('openbin.png');}
+  to {background-image: url('closedbin.png');}
+}
+
+.deleteTodo {
+  margin-left: auto;
+  border-radius: 5px;
+  color: white;
+  background-image: url('closedbin.png');
+  background-size: 28px;
+  height: 35px;
+  width: 31px;
+  margin-right: 10px;
+  border-color: #ffa07a;
+  border: 2px solid #ffa07a;
+  animation-name: deletetodoAnimation1;
+  animation-duration: 0.12s;
+}
+
+@keyframes deletetodoAnimation2 {
+  from {background-image: url('closedbin.png'); height: 35px; width: 31px;}
+  to {background-image: url('openbin.png'); height: 38px; width: 31.5px;}
+}
+
+.deleteTodo:hover {
+  animation-name: deletetodoAnimation2;
+  animation-duration: 0.2s;
+  background-image: url('openbin.png');
+}
+
+@keyframes checkboxAnimation1 {
+  from {height: 25px; width: 25px}
+  to {height: 20px; width: 20px}
+}
+
+.checkbox {
+  accent-color: #003153;
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+  animation-name: checkboxAnimation1;
+  animation-duration: 0.12s;
+}
+
+@keyframes checkboxAnimation2 {
+  from {height: 20px; width: 20px}
+  to {height: 25px; width: 25px}
+}
+
+.checkbox:hover {
+  accent-color: #003153;
+  height: 25px;
+  width: 25px;
+  animation-name: checkboxAnimation2;
+  animation-duration: 0.12s;
+}
