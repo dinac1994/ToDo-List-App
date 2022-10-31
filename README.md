@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+App is available at https://dinac1994.github.io/ToDo-List-App/.
+
 ## Available Scripts
 
 In the project directory, you can run:
